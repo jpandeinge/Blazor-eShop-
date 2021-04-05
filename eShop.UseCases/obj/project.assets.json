@@ -1,0 +1,88 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "eShop.CoreBusiness/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/eShop.CoreBusiness.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eShop.CoreBusiness.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "eShop.CoreBusiness/1.0.0": {
+      "type": "project",
+      "path": "../eShop.CoreBusiness/eShop.CoreBusiness.csproj",
+      "msbuildProject": "../eShop.CoreBusiness/eShop.CoreBusiness.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "eShop.CoreBusiness >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/jpandeinge/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj",
+      "projectName": "eShop.UseCases",
+      "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj",
+      "packagesPath": "/home/jpandeinge/.nuget/packages/",
+      "outputPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/jpandeinge/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj": {
+              "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

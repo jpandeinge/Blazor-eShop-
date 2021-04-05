@@ -1,0 +1,172 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/eShop.DataStore.HardCoded.csproj": {}
+  },
+  "projects": {
+    "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj",
+        "projectName": "eShop.CoreBusiness",
+        "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj",
+        "packagesPath": "/home/jpandeinge/.nuget/packages/",
+        "outputPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jpandeinge/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/eShop.DataStore.HardCoded.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/eShop.DataStore.HardCoded.csproj",
+        "projectName": "eShop.DataStore.HardCoded",
+        "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/eShop.DataStore.HardCoded.csproj",
+        "packagesPath": "/home/jpandeinge/.nuget/packages/",
+        "outputPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jpandeinge/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj": {
+                "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj",
+        "projectName": "eShop.UseCases",
+        "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj",
+        "packagesPath": "/home/jpandeinge/.nuget/packages/",
+        "outputPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jpandeinge/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj": {
+                "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

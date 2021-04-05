@@ -1,0 +1,17 @@
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/bin/Debug/net5.0/eShop.DataStore.HardCoded.deps.json
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/bin/Debug/net5.0/eShop.DataStore.HardCoded.dll
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/bin/Debug/net5.0/ref/eShop.DataStore.HardCoded.dll
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/bin/Debug/net5.0/eShop.DataStore.HardCoded.pdb
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/bin/Debug/net5.0/eShop.CoreBusiness.dll
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/bin/Debug/net5.0/eShop.UseCases.dll
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/bin/Debug/net5.0/eShop.UseCases.pdb
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/bin/Debug/net5.0/eShop.CoreBusiness.pdb
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/Debug/net5.0/eShop.DataStore.HardCoded.csprojAssemblyReference.cache
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/Debug/net5.0/eShop.DataStore.HardCoded.GeneratedMSBuildEditorConfig.editorconfig
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/Debug/net5.0/eShop.DataStore.HardCoded.AssemblyInfoInputs.cache
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/Debug/net5.0/eShop.DataStore.HardCoded.AssemblyInfo.cs
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/Debug/net5.0/eShop.DataStore.HardCoded.csproj.CoreCompileInputs.cache
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/Debug/net5.0/eShop.DataStore.HardCoded.csproj.CopyComplete
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/Debug/net5.0/eShop.DataStore.HardCoded.dll
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/Debug/net5.0/ref/eShop.DataStore.HardCoded.dll
+/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/Debug/net5.0/eShop.DataStore.HardCoded.pdb
