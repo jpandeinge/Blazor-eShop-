@@ -163,7 +163,7 @@
       },
       "eShop.CoreBusiness/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETStandard,Version=v2.1",
         "compile": {
           "bin/placeholder/eShop.CoreBusiness.dll": {}
         },
@@ -173,8 +173,9 @@
       },
       "eShop.DataStore.HardCoded/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "eShop.CoreBusiness": "1.0.0",
           "eShop.UseCases": "1.0.0"
         },
         "compile": {
@@ -186,7 +187,7 @@
       },
       "eShop.UseCases/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "eShop.CoreBusiness": "1.0.0"
         },

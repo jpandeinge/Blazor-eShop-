@@ -2,16 +2,26 @@
 
 @inject ISearchProduct searchProduct
 
+<h3>Search Product </h3>
 
-<h3>SearchProductComponent</h3>
+<ul>
+   @foreach (var prod in products)
+   {
+      <li>@prod.Name</li>
+   }
+   
+</ul>
 
 @code {
 
+   private IEnumerable<Product> products;
+   
    protected override void OnInitialized()
    {
       base.OnInitialized();
 
-      var products = searchProduct.Execute();
+      products = searchProduct.Execute();
    }
 
 }
+

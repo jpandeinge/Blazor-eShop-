@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    ".NETStandard,Version=v2.1": {
       "eShop.CoreBusiness/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETStandard,Version=v2.1",
         "compile": {
           "bin/placeholder/eShop.CoreBusiness.dll": {}
         },
@@ -14,7 +14,7 @@
       },
       "eShop.UseCases/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "eShop.CoreBusiness": "1.0.0"
         },
@@ -40,7 +40,8 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    ".NETStandard,Version=v2.1": [
+      "eShop.CoreBusiness >= 1.0.0",
       "eShop.UseCases >= 1.0.0"
     ]
   },
@@ -60,15 +61,18 @@
         "/home/jpandeinge/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "netstandard2.1"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "projectReferences": {
+            "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj": {
+              "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj"
+            },
             "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj": {
               "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj"
             }
@@ -82,8 +86,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
         "imports": [
           "net461",
           "net462",
@@ -95,7 +99,7 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.NETCore.App": {
+          "NETStandard.Library": {
             "privateAssets": "all"
           }
         },

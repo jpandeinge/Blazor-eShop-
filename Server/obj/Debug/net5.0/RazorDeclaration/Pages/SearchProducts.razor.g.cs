@@ -91,7 +91,21 @@ using MudBlazor;
 #nullable disable
 #nullable restore
 #line 13 "/home/jpandeinge/Dev/C#/E-Commerce/Server/_Imports.razor"
+using eShop.CoreBusiness.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "/home/jpandeinge/Dev/C#/E-Commerce/Server/_Imports.razor"
 using eShop.UseCases.SearchProductScreen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "/home/jpandeinge/Dev/C#/E-Commerce/Server/_Imports.razor"
+using eShop.UseCases.PluginInterfaces.DataStore;
 
 #line default
 #line hidden
@@ -105,14 +119,16 @@ using eShop.UseCases.SearchProductScreen;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 8 "/home/jpandeinge/Dev/C#/E-Commerce/Server/Pages/SearchProducts.razor"
+#line 15 "/home/jpandeinge/Dev/C#/E-Commerce/Server/Pages/SearchProducts.razor"
        
 
+   private IEnumerable<Product> products;
+   
    protected override void OnInitialized()
    {
       base.OnInitialized();
 
-      var products = searchProduct.Execute();
+      products = searchProduct.Execute();
    }
 
 

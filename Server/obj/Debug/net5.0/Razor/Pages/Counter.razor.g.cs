@@ -88,7 +88,21 @@ using MudBlazor;
 #nullable disable
 #nullable restore
 #line 13 "/home/jpandeinge/Dev/C#/E-Commerce/Server/_Imports.razor"
+using eShop.CoreBusiness.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "/home/jpandeinge/Dev/C#/E-Commerce/Server/_Imports.razor"
 using eShop.UseCases.SearchProductScreen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "/home/jpandeinge/Dev/C#/E-Commerce/Server/_Imports.razor"
+using eShop.UseCases.PluginInterfaces.DataStore;
 
 #line default
 #line hidden

@@ -1,4 +1,4 @@
-using eShop.CoreBusiness.Models;
+﻿using eShop.CoreBusiness.Models;
 
 namespace eShop.UseCases.SearchProductScreen
 {

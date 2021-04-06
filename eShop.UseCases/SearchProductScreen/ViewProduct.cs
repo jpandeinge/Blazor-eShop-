@@ -1,20 +1,23 @@
-using System.Collections.Generic;
-using eShop.CoreBusiness.Models;
+﻿using eShop.CoreBusiness.Models;
 using eShop.UseCases.PluginInterfaces.DataStore;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace eShop.UseCases.SearchProductScreen
 {
     public class ViewProduct : IViewProduct
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IProductRepository productRepository;
 
         public ViewProduct(IProductRepository productRepository)
         {
-            _productRepository = productRepository;
+            this.productRepository = productRepository;
         }
-        public  Product Execute(int id)
+
+        public Product Execute(int id)
         {
-            return _productRepository.GetProduct(id);
+            return productRepository.GetProduct(id);
         }
     }
 }

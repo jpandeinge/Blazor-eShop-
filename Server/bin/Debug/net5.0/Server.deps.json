@@ -465,6 +465,7 @@
       },
       "eShop.DataStore.HardCoded/1.0.0": {
         "dependencies": {
+          "eShop.CoreBusiness": "1.0.0",
           "eShop.UseCases": "1.0.0"
         },
         "runtime": {
