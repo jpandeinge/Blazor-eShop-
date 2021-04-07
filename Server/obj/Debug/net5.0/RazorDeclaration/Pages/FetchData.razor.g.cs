@@ -111,6 +111,13 @@ using eShop.UseCases.PluginInterfaces.DataStore;
 #line hidden
 #nullable disable
 #nullable restore
+#line 18 "/home/jpandeinge/Dev/C#/E-Commerce/Server/_Imports.razor"
+using Server.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "/home/jpandeinge/Dev/C#/E-Commerce/Server/Pages/FetchData.razor"
 using Server.Data;
 

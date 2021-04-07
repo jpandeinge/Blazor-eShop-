@@ -1,0 +1,21 @@
+<MudGrid>
+    <MudItem xs="12" sm="6">
+        <MudText Typo="Typo.h6">Search Products</MudText>
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudTextField T="string" ValueChanged="@(s => OnSearch(s))" Placeholder="I'm Shopping for..." Adornment="Adornment.Start"
+                      AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0">
+        </MudTextField>
+    </MudItem>
+</MudGrid>
+
+@code {
+    
+    private string searchString = null;
+
+    private void OnSearch(string text)
+    {
+        searchString = text;
+    }
+
+}

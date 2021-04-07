@@ -2,26 +2,33 @@
 
 @inject ISearchProduct searchProduct
 
-<h3>Search Product </h3>
-
-<ul>
-   @foreach (var prod in products)
-   {
-      <li>@prod.Name</li>
-   }
-   
-</ul>
+<MudGrid>
+    <MudPaper>
+        <SearchBar></SearchBar>
+    </MudPaper>
+    <MudPaper>
+        <MudList>
+            <MudListItem>
+                @foreach (var prod in products)
+                {
+                    <li>@prod.Name</li>
+                }
+            </MudListItem>
+        </MudList>
+    </MudPaper>
+</MudGrid>
 
 @code {
 
-   private IEnumerable<Product> products;
-   
-   protected override void OnInitialized()
-   {
-      base.OnInitialized();
+    
+    private IEnumerable<Product> products;
 
-      products = searchProduct.Execute();
-   }
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        products = searchProduct.Execute();
+    }
+    
 
 }
-

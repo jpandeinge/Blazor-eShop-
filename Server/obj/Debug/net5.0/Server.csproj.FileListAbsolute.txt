@@ -75,3 +75,5 @@
 /home/jpandeinge/Dev/C#/E-Commerce/Server/bin/Debug/net5.0/eShop.UseCases.pdb
 /home/jpandeinge/Dev/C#/E-Commerce/Server/obj/Debug/net5.0/RazorDeclaration/Pages/SearchProducts.razor.g.cs
 /home/jpandeinge/Dev/C#/E-Commerce/Server/obj/Debug/net5.0/Razor/Pages/SearchProducts.razor.g.cs
+/home/jpandeinge/Dev/C#/E-Commerce/Server/obj/Debug/net5.0/RazorDeclaration/Components/SearchBar.razor.g.cs
+/home/jpandeinge/Dev/C#/E-Commerce/Server/obj/Debug/net5.0/Razor/Components/SearchBar.razor.g.cs

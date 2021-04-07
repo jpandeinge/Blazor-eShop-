@@ -1,9 +1,0 @@
-/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/bin/Debug/netstandard2.1/eShop.CoreBusiness.deps.json
-/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/bin/Debug/netstandard2.1/eShop.CoreBusiness.dll
-/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/bin/Debug/netstandard2.1/eShop.CoreBusiness.pdb
-/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/Debug/netstandard2.1/eShop.CoreBusiness.csprojAssemblyReference.cache
-/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/Debug/netstandard2.1/eShop.CoreBusiness.AssemblyInfoInputs.cache
-/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/Debug/netstandard2.1/eShop.CoreBusiness.AssemblyInfo.cs
-/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/Debug/netstandard2.1/eShop.CoreBusiness.csproj.CoreCompileInputs.cache
-/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/Debug/netstandard2.1/eShop.CoreBusiness.dll
-/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/Debug/netstandard2.1/eShop.CoreBusiness.pdb

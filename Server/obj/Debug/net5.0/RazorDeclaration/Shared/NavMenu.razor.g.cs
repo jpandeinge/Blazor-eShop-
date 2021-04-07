@@ -110,6 +110,13 @@ using eShop.UseCases.PluginInterfaces.DataStore;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 18 "/home/jpandeinge/Dev/C#/E-Commerce/Server/_Imports.razor"
+using Server.Components;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -118,7 +125,7 @@ using eShop.UseCases.PluginInterfaces.DataStore;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "/home/jpandeinge/Dev/C#/E-Commerce/Server/Shared/NavMenu.razor"
+#line 32 "/home/jpandeinge/Dev/C#/E-Commerce/Server/Shared/NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

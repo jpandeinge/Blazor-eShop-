@@ -110,6 +110,13 @@ using eShop.UseCases.PluginInterfaces.DataStore;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 18 "/home/jpandeinge/Dev/C#/E-Commerce/Server/_Imports.razor"
+using Server.Components;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/products")]
     public partial class SearchProducts : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -119,17 +126,23 @@ using eShop.UseCases.PluginInterfaces.DataStore;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 15 "/home/jpandeinge/Dev/C#/E-Commerce/Server/Pages/SearchProducts.razor"
+#line 18 "/home/jpandeinge/Dev/C#/E-Commerce/Server/Pages/SearchProducts.razor"
        
 
-   private IEnumerable<Product> products;
-   
-   protected override void OnInitialized()
-   {
-      base.OnInitialized();
+    private string searchString = "";
+    private IEnumerable<Product> products;
 
-      products = searchProduct.Execute();
-   }
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        products = searchProduct.Execute();
+    }
+
+    private void HandleSearch(string filter)
+    {
+        
+    }
 
 
 #line default
