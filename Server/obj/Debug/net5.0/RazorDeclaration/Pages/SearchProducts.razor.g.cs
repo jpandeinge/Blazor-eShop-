@@ -126,10 +126,10 @@ using Server.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 18 "/home/jpandeinge/Dev/C#/E-Commerce/Server/Pages/SearchProducts.razor"
+#line 36 "/home/jpandeinge/Dev/C#/E-Commerce/Server/Pages/SearchProducts.razor"
        
 
-    private string searchString = "";
+    
     private IEnumerable<Product> products;
 
     protected override void OnInitialized()
@@ -139,15 +139,18 @@ using Server.Components;
         products = searchProduct.Execute();
     }
 
-    private void HandleSearch(string filter)
+    private string searchString = null;
+    
+    private void OnSearch(string text)
     {
-        
+        searchString = text;
     }
 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient httpClient { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ISearchProduct searchProduct { get; set; }
     }
 }

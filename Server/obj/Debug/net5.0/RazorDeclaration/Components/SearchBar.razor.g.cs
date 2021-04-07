@@ -128,10 +128,13 @@ using Server.Components;
 #line 9 "/home/jpandeinge/Dev/C#/E-Commerce/Server/Components/SearchBar.razor"
        
 
-    private void OnSearch(string filter)
+    private string searchString = null;
+
+    private void OnSearch(string text)
     {
-        
+        searchString = text;
     }
+
 
 #line default
 #line hidden
