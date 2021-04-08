@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YqQoY75RBeNFPuFHjie8DX50D48Sv4HXngEXkFqBoXtNbYpOqJSNpDBotT03O1JP5xoCtwhE3snNVpssnK0B5A==",
+  "dgSpecHash": "2t3gFViTOG/D/l9SrP0UKNVUVtCf6YLvzk2zgJCjbp4diox/oom5beKrvVc4CwdC/jolWDZiv1ItUkF8XCM5mQ==",
   "success": true,
-  "projectFilePath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/eShop.DataStore.HardCoded.csproj",
+  "projectFilePath": "C:\\Dev\\tutorials\\E-Commerce\\eShop.DataStore.HardCoded\\eShop.DataStore.HardCoded.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -8,24 +8,25 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/home/jpandeinge/.nuget/packages/": {}
+    "C:\\Users\\Joseph\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj",
+      "projectUniqueName": "C:\\Dev\\tutorials\\E-Commerce\\eShop.CoreBusiness\\eShop.CoreBusiness.csproj",
       "projectName": "eShop.CoreBusiness",
-      "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj",
-      "packagesPath": "/home/jpandeinge/.nuget/packages/",
-      "outputPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/",
+      "projectPath": "C:\\Dev\\tutorials\\E-Commerce\\eShop.CoreBusiness\\eShop.CoreBusiness.csproj",
+      "packagesPath": "C:\\Users\\Joseph\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\tutorials\\E-Commerce\\eShop.CoreBusiness\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/jpandeinge/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Joseph\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "http://nuget.colab.in.na/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -58,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }

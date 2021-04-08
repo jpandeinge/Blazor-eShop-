@@ -10,3 +10,15 @@
 /home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/Debug/net5.0/eShop.CoreBusiness.dll
 /home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/Debug/net5.0/ref/eShop.CoreBusiness.dll
 /home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/obj/Debug/net5.0/eShop.CoreBusiness.pdb
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\bin\Debug\net5.0\eShop.CoreBusiness.deps.json
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\bin\Debug\net5.0\eShop.CoreBusiness.dll
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\bin\Debug\net5.0\ref\eShop.CoreBusiness.dll
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\bin\Debug\net5.0\eShop.CoreBusiness.pdb
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\obj\Debug\net5.0\eShop.CoreBusiness.csprojAssemblyReference.cache
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\obj\Debug\net5.0\eShop.CoreBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\obj\Debug\net5.0\eShop.CoreBusiness.AssemblyInfoInputs.cache
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\obj\Debug\net5.0\eShop.CoreBusiness.AssemblyInfo.cs
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\obj\Debug\net5.0\eShop.CoreBusiness.csproj.CoreCompileInputs.cache
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\obj\Debug\net5.0\eShop.CoreBusiness.dll
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\obj\Debug\net5.0\ref\eShop.CoreBusiness.dll
+C:\Dev\tutorials\E-Commerce\eShop.CoreBusiness\obj\Debug\net5.0\eShop.CoreBusiness.pdb

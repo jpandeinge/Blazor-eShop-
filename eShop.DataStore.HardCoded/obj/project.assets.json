@@ -46,35 +46,36 @@
     ]
   },
   "packageFolders": {
-    "/home/jpandeinge/.nuget/packages/": {}
+    "C:\\Users\\Joseph\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/eShop.DataStore.HardCoded.csproj",
+      "projectUniqueName": "C:\\Dev\\tutorials\\E-Commerce\\eShop.DataStore.HardCoded\\eShop.DataStore.HardCoded.csproj",
       "projectName": "eShop.DataStore.HardCoded",
-      "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/eShop.DataStore.HardCoded.csproj",
-      "packagesPath": "/home/jpandeinge/.nuget/packages/",
-      "outputPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.DataStore.HardCoded/obj/",
+      "projectPath": "C:\\Dev\\tutorials\\E-Commerce\\eShop.DataStore.HardCoded\\eShop.DataStore.HardCoded.csproj",
+      "packagesPath": "C:\\Users\\Joseph\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\tutorials\\E-Commerce\\eShop.DataStore.HardCoded\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/jpandeinge/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Joseph\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "http://nuget.colab.in.na/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj": {
-              "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj"
+            "C:\\Dev\\tutorials\\E-Commerce\\eShop.CoreBusiness\\eShop.CoreBusiness.csproj": {
+              "projectPath": "C:\\Dev\\tutorials\\E-Commerce\\eShop.CoreBusiness\\eShop.CoreBusiness.csproj"
             },
-            "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj": {
-              "projectPath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj"
+            "C:\\Dev\\tutorials\\E-Commerce\\eShop.UseCases\\eShop.UseCases.csproj": {
+              "projectPath": "C:\\Dev\\tutorials\\E-Commerce\\eShop.UseCases\\eShop.UseCases.csproj"
             }
           }
         }
@@ -103,7 +104,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }

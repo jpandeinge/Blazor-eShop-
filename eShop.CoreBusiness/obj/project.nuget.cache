@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mzxRNoKWTsItdtg5W0ZcSd525jqqV+cjmG/eIX6312qdpkXXec+0nD18jpVloomFVSHLvCBrLBVLlCtGPaixKQ==",
+  "dgSpecHash": "U0rwFWFG/UtM5SzBK3Am9ckpTqqoc2U9Xa5tqfI13hkz3llWZIIaBOVrfmOVPRz1bVKOAyfW95F9cjJPIac52w==",
   "success": true,
-  "projectFilePath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.CoreBusiness/eShop.CoreBusiness.csproj",
+  "projectFilePath": "C:\\Dev\\tutorials\\E-Commerce\\eShop.CoreBusiness\\eShop.CoreBusiness.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

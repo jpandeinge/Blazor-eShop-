@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i20qxDWnVC4deaiaeVcAK2OS1Z3VngOQ1k1/AdR3FtANvj5DrTedp/r8ICNKX//4vbnS8p5f+XYMIfIQ1pqgqA==",
+  "dgSpecHash": "JpAq/7po799td1xi2mcqX/S4gS5U8RldtXVI+9M4XWkMD4gmJzVIPN4yqbP4hvcBZ48bqxNMP7oCPL46oxqdig==",
   "success": true,
-  "projectFilePath": "/home/jpandeinge/Dev/C#/E-Commerce/eShop.UseCases/eShop.UseCases.csproj",
+  "projectFilePath": "C:\\Dev\\tutorials\\E-Commerce\\eShop.UseCases\\eShop.UseCases.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
