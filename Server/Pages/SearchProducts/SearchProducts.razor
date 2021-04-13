@@ -1,0 +1,27 @@
+
+<MudTable ServerData="@(new Func<TableState,Task<TableData<Product>>>(ServerReload))" Dense="true" Hover="true" @ref="table">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Products</MudText>
+        <MudToolBarSpacer/>
+        <MudTextField T="string" ValueChanged="@(s => OnSearch(s))" Placeholder="Search" Adornment="Adornment.Start"
+                      AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0">
+        </MudTextField>
+    </ToolBarContent>
+    
+    <HeaderContent>
+        <MudTh><MudTableSortLabel SortLabel="name_field" T="Product">Name</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortLabel="brand_field" T="Product">Brand</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortLabel="price_field" T="Product">Price</MudTableSortLabel></MudTh>
+    </HeaderContent>
+    
+    <RowTemplate>
+        <MudTd DataLabel="Nr">@context.Name</MudTd>
+        <MudTd DataLabel="Sign">@context.Brand</MudTd>
+        <MudTd DataLabel="Molar mass">@context.Price</MudTd>
+    </RowTemplate>
+    
+    <PagerContent>
+            <MudTablePager />
+    </PagerContent>
+</MudTable>
+

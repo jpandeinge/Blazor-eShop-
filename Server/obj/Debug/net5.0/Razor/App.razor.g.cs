@@ -184,6 +184,8 @@ using eShop.UseCases.PluginInterfaces.DataStore;
             __builder.CloseComponent();
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient httpClient { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ISearchProduct searchProduct { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -6,11 +6,11 @@ using System.Linq;
 
 namespace eShop.DataStore.HardCoded
 {
-    public class ProductRepository : IProductRepository
+    public  class ProductRepository : IProductRepository
     {
-        private List<Product> products;
+        private static List<Product> products;
 
-        public ProductRepository()
+        static ProductRepository()
         {
             products = new List<Product>
             {
@@ -38,12 +38,22 @@ namespace eShop.DataStore.HardCoded
             };
         }
 
-        public Product GetProduct(int id)
+        public static Product GetProduct(int id)
         {
             return products.FirstOrDefault(x => x.Id == id);
         }
 
-        public IEnumerable<Product> GetProducts(string filter = null)
+        IEnumerable<Product> IProductRepository.GetProducts(string filter)
+        {
+            return GetProducts(filter);
+        }
+
+        Product IProductRepository.GetProduct(int id)
+        {
+            return GetProduct(id);
+        }
+
+        public static IEnumerable<Product> GetProducts(string filter = null)
         {
             if (string.IsNullOrWhiteSpace(filter)) return products;
 

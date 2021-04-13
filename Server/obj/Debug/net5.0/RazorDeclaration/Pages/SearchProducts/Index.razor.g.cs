@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Server.Pages
+namespace Server.Pages.SearchProducts
 {
     #line hidden
     using System;
@@ -110,7 +110,7 @@ using eShop.UseCases.PluginInterfaces.DataStore;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/products")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

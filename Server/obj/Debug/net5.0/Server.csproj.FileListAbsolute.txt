@@ -116,7 +116,6 @@ C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\RazorDeclaration\Pages\Count
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\RazorDeclaration\Pages\DynamicContent.razor.g.cs
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
-C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\RazorDeclaration\Pages\SearchProducts.razor.g.cs
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
@@ -131,7 +130,6 @@ C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Razor\Pages\DynamicContent.razor.g.cs
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
-C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Razor\Pages\SearchProducts.razor.g.cs
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
@@ -154,3 +152,7 @@ C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Server.dll
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\ref\Server.dll
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Server.pdb
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Server.genruntimeconfig.cache
+C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\RazorDeclaration\Pages\SearchProducts\SearchProducts.razor.g.cs
+C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Razor\Pages\SearchProducts\SearchProducts.razor.g.cs
+C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\RazorDeclaration\Pages\SearchProducts\Index.razor.g.cs
+C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Razor\Pages\SearchProducts\Index.razor.g.cs

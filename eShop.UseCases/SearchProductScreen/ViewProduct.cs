@@ -8,16 +8,16 @@ namespace eShop.UseCases.SearchProductScreen
 {
     public class ViewProduct : IViewProduct
     {
-        private readonly IProductRepository productRepository;
+        // private readonly IProductRepository productRepository;
+        //
+        // public ViewProduct(IProductRepository productRepository)
+        // {
+        //     // this.productRepository = productRepository;
+        // }
 
-        public ViewProduct(IProductRepository productRepository)
-        {
-            this.productRepository = productRepository;
-        }
-
-        public Product Execute(int id)
-        {
-            return productRepository.GetProduct(id);
-        }
+        // public Product Execute(int id)
+        // {
+        //     return productRepository.GetProduct(id);
+        // }
     }
 }
