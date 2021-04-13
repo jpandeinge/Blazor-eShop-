@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
-using System.Net.Http.Json;
 using System.Threading.Tasks;
 using eShop.CoreBusiness.Models;
 using eShop.DataStore.HardCoded;
@@ -12,22 +10,19 @@ using MudBlazor;
 namespace Server.Pages.SearchProducts
 {
     [Route("api/v1/products/search/")]
-    public partial class SearchProducts : ComponentBase
+    public class SearchProductsBase : ComponentBase
     {
-        
-        public  IEnumerable<Product> pageData;
-        public  MudTable<Product> table;
-
-        
+        public IEnumerable<Product> pageData;
+        public MudTable<Product> table;
 
 
         private int totalItems;
         private string searchString = null;
-        
-        private async Task<TableData<Product>> ServerReload(TableState state)
+
+        public  async Task<TableData<Product>> ServerReload(TableState state)
         {
             // string uri = $"api/v1/products/search/products";
-        
+
             // IEnumerable<Product> data = await httpClient.GetFromJsonAsync<List<Product>>(uri);
             var data = ProductRepository.GetProducts("");
             data = data.Where(product =>
@@ -36,28 +31,32 @@ namespace Server.Pages.SearchProducts
                 {
                     return true;
                 }
+
                 if (product.Brand.Contains(searchString, StringComparison.OrdinalIgnoreCase))
                 {
                     return true;
                 }
+
                 if (product.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase))
                 {
                     return true;
                 }
+
                 if ($"{product.Price}".Contains(searchString))
                 {
                     return true;
                 }
+
                 return false;
             }).ToArray();
-            
+
             totalItems = data.Count();
             switch (state.SortLabel)
             {
                 case "name_field":
                     data = data.OrderByDirection(state.SortDirection, o => o.Name);
                     break;
-                
+
                 case "brand_field":
                     data = data.OrderByDirection(state.SortDirection, o => o.Brand);
                     break;
@@ -69,12 +68,11 @@ namespace Server.Pages.SearchProducts
             pageData = data.Skip(state.Page * state.PageSize).Take(state.PageSize).ToArray();
             return new TableData<Product>() {TotalItems = totalItems, Items = pageData};
         }
-        
+
         public void OnSearch(string text)
         {
             searchString = text;
             table.ReloadServerData();
-
         }
     }
 }

@@ -1,5 +1,46 @@
-﻿@page "/products"
+﻿@page "/"
 
+<MudGrid>
+    <MudItem xs="12" sm="6" md="4">
+        <SearchToolbar></SearchToolbar>
+    </MudItem>
+</MudGrid>
 
-<SearchProducts></SearchProducts>
+<br/>
 
+<MudGrid>
+    <MudItem >
+        <MudGrid Spacing="@spacing" Justify="Justify.Center">
+            <MudItem>
+                <ImageCard></ImageCard>
+            </MudItem>
+            <MudItem>
+                <ImageCard></ImageCard>
+            </MudItem>
+            <MudItem>
+                <ImageCard></ImageCard>
+            </MudItem>
+            <MudItem>
+                <ImageCard></ImageCard>
+            </MudItem>
+        </MudGrid>
+    </MudItem>
+</MudGrid>
+
+@code {
+    public int spacing { get; set; } = 1;
+
+    void AddSpacing()
+    {
+        if (spacing >= 10)
+        {
+            spacing = 0;
+        }
+        else
+        {
+            spacing += 1;
+        }
+        StateHasChanged();
+    }
+
+}

@@ -90,27 +90,34 @@ using MudBlazor;
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
+#line 14 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
 using eShop.CoreBusiness.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
+#line 15 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
 using eShop.UseCases.SearchProductScreen;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
+#line 16 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
 using eShop.UseCases.PluginInterfaces.DataStore;
 
 #line default
 #line hidden
 #nullable disable
-    public partial class SearchProducts : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 19 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
+using Server.Components;
+
+#line default
+#line hidden
+#nullable disable
+    public partial class SearchProducts : SearchProductsBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)

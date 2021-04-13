@@ -90,27 +90,34 @@ using MudBlazor;
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
+#line 14 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
 using eShop.CoreBusiness.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
+#line 15 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
 using eShop.UseCases.SearchProductScreen;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
+#line 16 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
 using eShop.UseCases.PluginInterfaces.DataStore;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/products")]
+#nullable restore
+#line 19 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
+using Server.Components;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -118,6 +125,28 @@ using eShop.UseCases.PluginInterfaces.DataStore;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 30 "C:\Dev\tutorials\E-Commerce\Server\Pages\SearchProducts\Index.razor"
+       
+    public int spacing { get; set; } = 1;
+
+    void AddSpacing()
+    {
+        if (spacing >= 10)
+        {
+            spacing = 0;
+        }
+        else
+        {
+            spacing += 1;
+        }
+        StateHasChanged();
+    }
+
+
+#line default
+#line hidden
+#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient httpClient { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ISearchProduct searchProduct { get; set; }
     }
