@@ -1,5 +1,4 @@
 
-@inherits SearchProductsBase
 
 <MudTable ServerData="@(new Func<TableState,Task<TableData<Product>>>(ServerReload))" Dense="true" Hover="true" @ref="table">
     <ToolBarContent>
@@ -20,7 +19,7 @@
     <RowTemplate>
         <MudTd DataLabel="Name">@context.Name</MudTd>
         <MudTd DataLabel="Brand">@context.Brand</MudTd>
-        <MudTd DataLabel="Price">@context.Price.ToString("C")</MudTd>
+        <MudTd DataLabel="Price">@context.Price.ToString("NAD ### ###.00")</MudTd>
     </RowTemplate>
     
     <PagerContent>

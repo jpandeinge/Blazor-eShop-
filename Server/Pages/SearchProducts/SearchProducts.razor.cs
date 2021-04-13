@@ -10,7 +10,7 @@ using MudBlazor;
 namespace Server.Pages.SearchProducts
 {
     [Route("api/v1/products/search/")]
-    public class SearchProductsBase : ComponentBase
+    public partial class SearchProducts : ComponentBase
     {
         public IEnumerable<Product> pageData;
         public MudTable<Product> table;

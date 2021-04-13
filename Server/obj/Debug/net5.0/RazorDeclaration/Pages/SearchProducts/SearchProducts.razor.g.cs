@@ -117,7 +117,7 @@ using Server.Components;
 #line default
 #line hidden
 #nullable disable
-    public partial class SearchProducts : SearchProductsBase
+    public partial class SearchProducts : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)

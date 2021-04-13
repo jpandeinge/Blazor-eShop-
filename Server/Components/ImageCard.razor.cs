@@ -2,8 +2,8 @@
 
 namespace Server.Components
 {
-    public  class ImageCardBase : ComponentBase
+    public partial class ImageCard : ComponentBase
     {
-        
+       
     }
 }

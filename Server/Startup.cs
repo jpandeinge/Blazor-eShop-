@@ -1,19 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using eShop.DataStore.HardCoded;
 using eShop.UseCases.PluginInterfaces.DataStore;
 using eShop.UseCases.SearchProductScreen;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MudBlazor.Services;
-using Server.Data;
 
 namespace Server
 {
@@ -32,7 +25,6 @@ namespace Server
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
             services.AddMudServices();
             
             services.AddHttpClient();

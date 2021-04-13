@@ -1,19 +1,11 @@
-﻿<MudToolBar>
+﻿
+<MudToolBar>
     <MudTextField T="string" 
+                  ValueChanged="@(s => OnSearch(s))"
                   Variant="Variant.Outlined" 
                   Placeholder="Search..." 
                   Adornment="Adornment.End" 
                   AdornmentIcon="@Icons.Material.Filled.Search" 
                   IconSize="Size.Medium" 
                   Class="mt-0"></MudTextField>
-    @* <MudIconButton Icon="@Icons.Material.Outlined.Search" Color="Color.Inherit"/> *@
 </MudToolBar>
-
-
-@* <ToolBarContent> *@
-@*     <MudText Typo="Typo.h6">Products</MudText> *@
-@*     <MudToolBarSpacer/> *@
-@*     <MudTextField T="string" ValueChanged="@(s => OnSearch(s))" Placeholder="Search" Adornment="Adornment.Start" *@
-@*                   AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"> *@
-@*     </MudTextField> *@
-@* </ToolBarContent> *@
