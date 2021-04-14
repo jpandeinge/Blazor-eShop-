@@ -124,22 +124,6 @@ using Server.Components;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 18 "C:\Dev\tutorials\E-Commerce\Server\Shared\NavMenu.razor"
-       
-    private bool collapseNavMenu = true;
-
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-
-
-#line default
-#line hidden
-#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient httpClient { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ISearchProduct searchProduct { get; set; }
     }

@@ -27,6 +27,12 @@
                 </MudTooltip>
             </div>
         </MudAppBar>
+        <MudDrawer @bind-Open=_drawerOpen Elevation="25" Class="mudblazor-appbar-band">
+            <MudDrawerHeader Class="mudblazor-brand" LinkToIndex="true">
+                <MudBlazorLogo/>
+            </MudDrawerHeader>
+            <NavMenu @ref="@_navMenuRef"/>
+        </MudDrawer>
 
         <MudMainContent Class="mudblazor-main-content">
             @Body
