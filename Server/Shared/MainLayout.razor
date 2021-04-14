@@ -1,11 +1,15 @@
 ﻿@using Server.Services
 @inherits LayoutComponentBase
 
+<MudThemeProvider Theme="_currentTheme"/>
+<MudDialogProvider FullWidth="true" MaxWidth="MaxWidth.ExtraSmall"/>
+<MudSnackbarProvider/>
+
 <MudSwipeArea OnSwipe="@OnSwipe">
     <MudLayout RightToLeft="@_rightToLeft">
         <MudAppBar Elevation="25">
             <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
-            <MudText Typo="Typo.h5" Class="mudblazor-appbar-brand-text d-none d-md-flex">E-Commerce</MudText>
+            <MudText Typo="Typo.h5" Class="mudblazor-appbar-brand-text d-none d-md-flex">Shop</MudText>
             <MudAppBarSpacer/>
             <MudAutocomplete T="AppLinkServiceEntry" Placeholder="Search" Variant="Variant.Outlined" Class="docs-search-bar">
                 <ItemTemplate Context="result">
@@ -13,19 +17,17 @@
                 </ItemTemplate>
             </MudAutocomplete>
             <MudAppBarSpacer/>
-            @* <div class="d-none d-md-flex align-center"> *@
-            @* *@
-            @*     <MudTooltip Text="Toggle light/dark theme"> *@
-            @*         <MudIconButton Icon="@Icons.Material.Filled.Brightness4" Color="Color.Inherit" OnClick="@((e) => DarkMode())"/> *@
-            @*     </MudTooltip> *@
-            @* </div> *@
-            @* *@
-            @* <MudMenu Icon="@Icons.Filled.Settings" Color="Color.Inherit" Dense="true" Direction="Direction.Right" OffsetY="true" Class="d-md-none"> *@
-            @*     <MudMenuItem Link="https://github.com/jpandeinge" Target="_blank">Contact</MudMenuItem> *@
-            @* </MudMenu> *@
 
+            <div class="px-2">
+                <MudTooltip Text="Toggle light/dark theme">
+                    <MudIconButton Icon="@Icons.Material.Filled.Brightness4" Color="Color.Inherit" OnClick="@((e) => DarkMode())"/>
+                </MudTooltip>
+                <MudTooltip Text="GitHub">
+                    <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/jpandeinge" Target="_blank"/>
+                </MudTooltip>
+            </div>
         </MudAppBar>
-        
+
         <MudMainContent Class="mudblazor-main-content">
             @Body
             <MudScrollToTop TopOffset="400">

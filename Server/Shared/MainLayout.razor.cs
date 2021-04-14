@@ -2,16 +2,26 @@
 using MudBlazor;
 
 
+
 namespace Server.Shared
 {
     public partial class MainLayout : LayoutComponentBase
     {
         private bool _drawerOpen = false;
         private bool _rightToLeft = false;
+        private NavMenu _navMenuRef;
+        
+        [Inject] private NavigationManager NavigationManager { get; set; }
+        
 
         private void DrawerToggle()
         {
-            var b = _drawerOpen != _drawerOpen;
+            _drawerOpen = !_drawerOpen;
+        }
+
+        protected override void OnInitialized()
+        {
+            _currentTheme = _defaultTheme;
         }
 
 
@@ -28,8 +38,7 @@ namespace Server.Shared
             }
         }
 
-        #region Theme        
-        
+        #region Theme
         private void DarkMode()
         {
             if (_currentTheme == _defaultTheme)
