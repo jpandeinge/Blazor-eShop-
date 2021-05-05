@@ -11,25 +11,25 @@
             <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
             <MudText Typo="Typo.h5" Class="mudblazor-appbar-brand-text d-none d-md-flex">Shop</MudText>
             <MudAppBarSpacer/>
-            <MudAutocomplete T="AppLinkServiceEntry" Placeholder="Search" Variant="Variant.Outlined" Class="docs-search-bar">
-                <ItemTemplate Context="result">
-                    <MudText>@result.Title</MudText> <MudText Typo="Typo.body2">@result.SubTitle</MudText>
-                </ItemTemplate>
+            <MudAutocomplete T="AppLinkServiceEntry" Placeholder="Search"  Variant="Variant.Outlined" Class="docs-search-bar">
+                @* <ItemTemplate Context="result"> *@
+                @*     <MudText>@result.Title</MudText> <MudText Typo="Typo.body2">@result.SubTitle</MudText> *@
+                @* </ItemTemplate> *@
             </MudAutocomplete>
             <MudAppBarSpacer/>
 
             <div class="px-2">
                 <MudTooltip Text="Toggle light/dark theme">
-                    <MudIconButton Icon="@Icons.Material.Filled.Brightness4" Color="Color.Inherit" OnClick="@((e) => DarkMode())"/>
+                    <MudIconButton Icon="@_themeIcon" Color="Color.Inherit" OnClick="@((e) => DarkMode())"/>
                 </MudTooltip>
-                <MudTooltip Text="GitHub">
-                    <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/jpandeinge" Target="_blank"/>
+                <MudTooltip Text="Support">
+                    <MudIconButton Icon="fas fa-question-circle" Color="Color.Inherit" Link="https://github.com/jpandeinge" Target="_blank"/>
                 </MudTooltip>
             </div>
         </MudAppBar>
-        <MudDrawer @bind-Open=_drawerOpen Elevation="25" Class="mudblazor-appbar-band">
+        <MudDrawer @bind-Open="@_drawerOpen" Elevation="25" Class="mudblazor-appbar-band">
             <MudDrawerHeader Class="mudblazor-brand" LinkToIndex="true">
-                <MudBlazorLogo/>
+                @* <MudBlazorLogo/> *@
             </MudDrawerHeader>
             <NavMenu @ref="@_navMenuRef"/>
         </MudDrawer>

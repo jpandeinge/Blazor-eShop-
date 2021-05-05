@@ -9,7 +9,6 @@ namespace Server.Shared
     #line hidden
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
@@ -113,6 +112,13 @@ using eShop.UseCases.PluginInterfaces.DataStore;
 #nullable restore
 #line 19 "C:\Dev\tutorials\E-Commerce\Server\_Imports.razor"
 using Server.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 1 "C:\Dev\tutorials\E-Commerce\Server\Shared\NavMenu.razor"
+using System.Linq;
 
 #line default
 #line hidden

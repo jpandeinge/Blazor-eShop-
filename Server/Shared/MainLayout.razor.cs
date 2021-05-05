@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using System;
+using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
 
@@ -10,8 +11,12 @@ namespace Server.Shared
         private bool _drawerOpen = false;
         private bool _rightToLeft = false;
         private NavMenu _navMenuRef;
+
+        private string _themeIcon  ;
         
         [Inject] private NavigationManager NavigationManager { get; set; }
+
+      
         
 
         private void DrawerToggle()
@@ -19,9 +24,18 @@ namespace Server.Shared
             _drawerOpen = !_drawerOpen;
         }
 
+        private void Search(string text)
+        {
+            if(string.IsNullOrWhiteSpace(text)) 
+                
+            {return;}
+               
+        }
+
         protected override void OnInitialized()
         {
             _currentTheme = _defaultTheme;
+            _themeIcon =  "fas fa-sun";
         }
 
 
@@ -44,10 +58,12 @@ namespace Server.Shared
             if (_currentTheme == _defaultTheme)
             {
                 _currentTheme = _darkTheme;
+                _themeIcon = "fas fa-moon";
             }
             else
             {
                 _currentTheme = _defaultTheme;
+                _themeIcon = "fas fa-sun";
             }
         }
 

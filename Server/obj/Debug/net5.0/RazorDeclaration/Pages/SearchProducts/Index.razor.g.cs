@@ -126,7 +126,7 @@ using Server.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 23 "C:\Dev\tutorials\E-Commerce\Server\Pages\SearchProducts\Index.razor"
+#line 9 "C:\Dev\tutorials\E-Commerce\Server\Pages\SearchProducts\Index.razor"
        
     public int spacing { get; set; } = 1;
 

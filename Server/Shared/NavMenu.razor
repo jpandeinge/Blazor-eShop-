@@ -1,17 +1,29 @@
-﻿<MudNavMenu Class="mud-width-full">
+﻿@using System.Linq
 
+<MudNavMenu Class="mudblazor-navmenu">
+    <div class="docs-nav-fader"></div>
+
+    <MudText Typo="Typo.h6" Class="px-4">Application</MudText>
+    <MudText Typo="Typo.body2" Class="px-4 mud-text-secondary">app</MudText>
+    @* <MudDivider Class="my-2"/> *@
+
+    <MudNavLink Href="/dashboard" Icon="fas fa-file-invoice">Dashboard</MudNavLink>
+
+    @*SHOPPING CATEGORIES*@
     <MudNavGroup Title="Shopping" Icon="fas fa-shopping-cart" Expanded="false">
         <MudNavLink Href="/tshirts" Icon="fas fa-tshirt">T-shirts</MudNavLink>
         <MudNavLink Href="/shoes" Icon="fas fa-shoe-prints">Shoes</MudNavLink>
     </MudNavGroup>
 
-   
+    @*STORES*@
     <MudNavGroup Title="Stores" Icon="fas fa-store" Expanded="false">
         <MudNavLink Href="/clothing" Icon="fas fa-tshirt">Clothing</MudNavLink>
         <MudNavLink Href="/jewellery" Icon="fas fa-gem">Jewellery</MudNavLink>
         <MudNavLink Href="/restaurants" Icon="fas fa-utensils">Restaurants</MudNavLink>
         <MudNavLink Href="/fast-food" Icon="fas fa-hamburger">Fast Food</MudNavLink>
     </MudNavGroup>
+    
+    @*TRANSACTIONS*@
     <MudNavLink Href="/billing" Icon="fas fa-file-invoice">Transactions</MudNavLink>
     <MudNavGroup Title="Settings" Icon="fas fa-cog" Expanded="false">
         <MudNavLink Href="/users" Icon="fas fa-user-friends" IconColor="Color.Success">Users</MudNavLink>
@@ -19,33 +31,4 @@
     </MudNavGroup>
 
 </MudNavMenu>
-
-
-@* <div class="top-row pl-4 navbar navbar-dark"> *@
-@*     <a class="navbar-brand" href="">Server</a> *@
-@*     <button class="navbar-toggler" @onclick="ToggleNavMenu"> *@
-@*         <span class="navbar-toggler-icon"></span> *@
-@*     </button> *@
-@* </div> *@
-@* *@
-@* <div class="@NavMenuCssClass" @onclick="ToggleNavMenu"> *@
-@*     <ul class="nav flex-column"> *@
-@*         <li class="nav-item px-3"> *@
-@*             <NavLink class="nav-link" href="" Match="NavLinkMatch.All"> *@
-@*                 <span class="oi oi-home" aria-hidden="true"></span> Home *@
-@*             </NavLink> *@
-@*         </li> *@
-@*     </ul> *@
-@* </div> *@
-@* *@
-@* @code { *@
-@*     private bool collapseNavMenu = true; *@
-@* *@
-@*     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null; *@
-@* *@
-@*     private void ToggleNavMenu() *@
-@*     { *@
-@*         collapseNavMenu = !collapseNavMenu; *@
-@*     } *@
-@* *@
-@* } *@
+<div class="docs-nav-filler"></div>
