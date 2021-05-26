@@ -117,13 +117,6 @@ using Server.Components;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 1 "C:\Dev\tutorials\E-Commerce\Server\Shared\MainLayout.razor"
-using Server.Services;
-
-#line default
-#line hidden
-#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998

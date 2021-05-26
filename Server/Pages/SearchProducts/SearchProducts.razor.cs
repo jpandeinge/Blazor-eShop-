@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using eShop.CoreBusiness.Models;
 using eShop.DataStore.HardCoded;
 using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 using MudBlazor;
 
 namespace Server.Pages.SearchProducts
@@ -18,6 +19,7 @@ namespace Server.Pages.SearchProducts
 
         private int totalItems;
         private string searchString = null;
+        [Inject] private IJSRuntime JsRuntime { get; set; }
 
         public  async Task<TableData<Product>> ServerReload(TableState state)
         {
@@ -74,5 +76,18 @@ namespace Server.Pages.SearchProducts
             searchString = text;
             table.ReloadServerData();
         }
+
+        private static string GetExcel()
+        {
+             return $"api/v1/reports/export-excel/"; 
+        }
+
+        private async Task ExportExcel()
+        {
+            var uri = GetExcel();
+            await JsRuntime.InvokeVoidAsync(
+                "jsFunctions.openNewWindow", uri);
+        }
+        
     }
 }

@@ -6,7 +6,7 @@ namespace Server.Components
     {
         private string searchString = null;
 
-        public void OnSearch(string text)
+        private void OnSearch(string text)
         {
             searchString = text;
         }

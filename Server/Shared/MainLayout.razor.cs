@@ -1,7 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
-
 
 
 namespace Server.Shared
@@ -12,24 +13,27 @@ namespace Server.Shared
         private bool _rightToLeft = false;
         private NavMenu _navMenuRef;
 
-        private string _themeIcon  ;
+        private string _themeIcon ;
+
+        private string searchText;
         
         [Inject] private NavigationManager NavigationManager { get; set; }
-
-      
         
-
+        
         private void DrawerToggle()
         {
             _drawerOpen = !_drawerOpen;
         }
 
-        private void Search(string text)
+        private Task<IEnumerable<string>> Search(string text)
         {
-            if(string.IsNullOrWhiteSpace(text)) 
-                
-            {return;}
-               
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                return Task.FromResult<IEnumerable<string>>(Array.Empty<string>());
+            }
+
+            return null;
+
         }
 
         protected override void OnInitialized()

@@ -1,4 +1,4 @@
-﻿@using Server.Services
+﻿
 @inherits LayoutComponentBase
 
 <MudThemeProvider Theme="_currentTheme"/>
@@ -9,9 +9,9 @@
     <MudLayout RightToLeft="@_rightToLeft">
         <MudAppBar Elevation="25">
             <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
-            <MudText Typo="Typo.h5" Class="mudblazor-appbar-brand-text d-none d-md-flex">Shop</MudText>
+            <MudText Typo="Typo.h5" Class="mudblazor-appbar-brand-text d-none d-md-flex">Project</MudText>
             <MudAppBarSpacer/>
-            <MudAutocomplete T="AppLinkServiceEntry" Placeholder="Search"  Variant="Variant.Outlined" Class="docs-search-bar">
+            <MudAutocomplete T="string" @bind-Value="searchText" Placeholder="Search" SearchFunc="Search"  Variant="Variant.Outlined" Class="docs-search-bar">
                 @* <ItemTemplate Context="result"> *@
                 @*     <MudText>@result.Title</MudText> <MudText Typo="Typo.body2">@result.SubTitle</MudText> *@
                 @* </ItemTemplate> *@

@@ -32,6 +32,8 @@ namespace Server
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<ISearchProduct, SearchProduct>();
             services.AddTransient<IViewProduct, ViewProduct>();
+            
+            // services.AddScoped(typeof(IApiLinkService), typeof(ApiLinkServiceEntry));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
