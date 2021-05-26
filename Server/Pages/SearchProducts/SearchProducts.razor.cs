@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DocumentFormat.OpenXml.Office2010.ExcelAc;
+using DocumentFormat.OpenXml.Wordprocessing;
 using eShop.CoreBusiness.Models;
 using eShop.DataStore.HardCoded;
 using Microsoft.AspNetCore.Components;
@@ -15,11 +17,13 @@ namespace Server.Pages.SearchProducts
     {
         public IEnumerable<Product> pageData;
         public MudTable<Product> table;
+        
+        public List<Product> products = new();
 
 
         private int totalItems;
         private string searchString = null;
-        [Inject] private IJSRuntime JsRuntime { get; set; }
+        [Inject] private IJSRuntime _jsRuntime { get; set; }
 
         public  async Task<TableData<Product>> ServerReload(TableState state)
         {
@@ -82,14 +86,25 @@ namespace Server.Pages.SearchProducts
              return $"api/v1/productreport/"; 
         }
 
-        private async Task ExportExcel()
+        public async Task ExportExcel()
         {
-            var uri = GetExcel();
-            await JsRuntime.InvokeVoidAsync(
-                "jsFunctions.exportExcel", uri);
+            var products = this.products.Select(p=>p.Id);
+            var request =  new ProductReportRequest()
+            {
+                ProductIds = products,
+                Title = "title"
+            };
+            var fileName = "Product Report";
+            var resultBytes = await eShop.CoreBusiness.Features.ProductReportData.GetExcelReport(request);
             
-            // var resultByte = await eShop.UseCases.SearchProductScreen.ISearchProduct.GetExcelReport();
+            await _jsRuntime.InvokeVoidAsync(
+                "Window.downloadFromByteArray",
+                new
+                {
+                    ByteArray = resultBytes,
+                    FileName = fileName,
+                    ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                });
         }
-        
     }
 }

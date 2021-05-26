@@ -1,18 +1,21 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Threading.Tasks;
 using ClosedXML.Excel;
 using eShop.CoreBusiness.Models;
 
-namespace eShop.CoreBusiness.Reports
+namespace eShop.CoreBusiness.Reports.Excel
 {
-    public class ProductListExcelReportWriter
+    public class ProductListExcelReport
     {
-        public async Task<MemoryStream> GenerateExcel(IEnumerable<Product> productList, string title)
+        public static MemoryStream GenerateExcel(IEnumerable<Product> productList)
         {
             // initiate the workbook from ClosedXML 
             var workbook = new XLWorkbook();
-            var worksheet = workbook.Worksheets.Add(title);
+            var worksheet = workbook.Worksheets.Add("ProductList");
+            
+            // filename and worksheet title
+            string fileName = "ProductList Report";
+            var title = fileName;
             
             // add title to first column and cell
             worksheet.Cell(1, 1).Value = title;
@@ -55,11 +58,12 @@ namespace eShop.CoreBusiness.Reports
             var memoryStream = new MemoryStream();
             workbook.SaveAs(memoryStream);
             memoryStream.Seek(0L, SeekOrigin.Begin);
-            
+
+            return memoryStream;
             // // convert memory stream to array
             // var content = memoryStream.ToArray();
             // memoryStream.Close(); // close the memory stream
-            return memoryStream; // return byte content
+            // return content; // return byte content
         }
     }
 }

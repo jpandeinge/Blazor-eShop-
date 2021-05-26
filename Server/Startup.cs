@@ -1,3 +1,4 @@
+using eShop.CoreBusiness.Features;
 using eShop.DataStore.HardCoded;
 using eShop.UseCases.PluginInterfaces.DataStore;
 using eShop.UseCases.SearchProductScreen;
@@ -7,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MudBlazor.Services;
+using Server.Controllers;
 
 namespace Server
 {
@@ -32,7 +34,10 @@ namespace Server
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<ISearchProduct, SearchProduct>();
             services.AddTransient<IViewProduct, ViewProduct>();
-            
+            services.AddTransient<IProductReportData, ProductReportData>();
+
+            services.AddControllers();
+
             // services.AddScoped(typeof(IApiLinkService), typeof(ApiLinkServiceEntry));
         }
 

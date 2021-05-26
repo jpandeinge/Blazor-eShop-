@@ -6,6 +6,7 @@ namespace eShop.CoreBusiness.Features
 {
     public interface IProductReportData
     {
-       public Task<IEnumerable<Product>> GetReportData(Product reportParams);
+        Task<byte[]> GetExcelReport(ProductReportRequest request);
+        
     }
 }
