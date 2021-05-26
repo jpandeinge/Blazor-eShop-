@@ -17,8 +17,8 @@ namespace Server.Pages.SearchProducts
     {
         public IEnumerable<Product> pageData;
         public MudTable<Product> table;
-        
-        public List<Product> products = new();
+
+        private List<Product> Products = new();
 
 
         private int totalItems;
@@ -81,19 +81,16 @@ namespace Server.Pages.SearchProducts
             table.ReloadServerData();
         }
 
-        private static string GetExcel()
-        {
-             return $"api/v1/productreport/"; 
-        }
-
+        
         public async Task ExportExcel()
         {
-            var products = this.products.Select(p=>p.Id);
+            var products = Products.Select(p=>p.Id);
             var request =  new ProductReportRequest()
             {
                 ProductIds = products,
                 Title = "title"
             };
+            
             var fileName = "Product Report";
             var resultBytes = await eShop.CoreBusiness.Features.ProductReportData.GetExcelReport(request);
             

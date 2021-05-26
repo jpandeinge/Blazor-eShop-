@@ -14,24 +14,6 @@ namespace Server.Controllers
     [Route("api/v1/productreport")]
     public class ProductReportController : Controller
     {
-        private IProductReportData _reportData;
-        
-        public ProductReportController(IProductReportData reportData)
-        {
-            _reportData = reportData;
-        }
-        
-        // [HttpPost]
-        // [Route("")]
-        // public async Task<IActionResult> GetDataAsync([FromBody] List<Product> reportParams)
-        // {
-        //     var reporter = new ProductReportExcel(_reportData);
-        //     var report =  reporter.GenerateReport(reportParams);
-        //     var content = report.ToArray();
-        //     const string contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-        //     const string filename = "Product Excel Report";
-        //     return File(content, contentType, filename);
-        // }
         
         [HttpPost]
         [Route("export-to-excel/")]

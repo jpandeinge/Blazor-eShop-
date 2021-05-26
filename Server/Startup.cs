@@ -34,7 +34,7 @@ namespace Server
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<ISearchProduct, SearchProduct>();
             services.AddTransient<IViewProduct, ViewProduct>();
-            services.AddTransient<IProductReportData, ProductReportData>();
+            // services.AddTransient<IProductReportData, ProductReportData>();
 
             services.AddControllers();
 

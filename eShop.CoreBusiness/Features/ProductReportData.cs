@@ -7,15 +7,15 @@ using eShop.CoreBusiness.Models;
 
 namespace eShop.CoreBusiness.Features
 {
-    public class ProductReportData : IProductReportData
+    public class ProductReportData 
     {
-        private readonly HttpClient _httpClient;
+        private static HttpClient _httpClient;
         public ProductReportData(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
         
-        public async Task<byte[]> GetExcelReport(ProductReportRequest request)
+        public static async Task<byte[]> GetExcelReport(ProductReportRequest request)
         {
             var response = await _httpClient.PostAsJsonAsync($"api/v1/productreport", request);
             var stream = await response.Content.ReadAsStreamAsync();
