@@ -79,14 +79,16 @@ namespace Server.Pages.SearchProducts
 
         private static string GetExcel()
         {
-             return $"api/v1/reports/export-excel/"; 
+             return $"api/v1/productreport/"; 
         }
 
         private async Task ExportExcel()
         {
             var uri = GetExcel();
             await JsRuntime.InvokeVoidAsync(
-                "jsFunctions.openNewWindow", uri);
+                "jsFunctions.exportExcel", uri);
+            
+            // var resultByte = await eShop.UseCases.SearchProductScreen.ISearchProduct.GetExcelReport();
         }
         
     }

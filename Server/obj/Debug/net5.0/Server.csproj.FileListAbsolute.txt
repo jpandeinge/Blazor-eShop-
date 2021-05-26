@@ -149,3 +149,7 @@ C:\Dev\tutorials\E-Commerce\Server\bin\Debug\net5.0\Server.pdb
 C:\Dev\tutorials\E-Commerce\Server\bin\Debug\net5.0\Server.Views.pdb
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Server.csproj.CopyComplete
 C:\Dev\tutorials\E-Commerce\Server\obj\Debug\net5.0\Server.genruntimeconfig.cache
+C:\Dev\tutorials\E-Commerce\Server\bin\Debug\net5.0\ClosedXML.dll
+C:\Dev\tutorials\E-Commerce\Server\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+C:\Dev\tutorials\E-Commerce\Server\bin\Debug\net5.0\ExcelNumberFormat.dll
+C:\Dev\tutorials\E-Commerce\Server\bin\Debug\net5.0\System.IO.Packaging.dll

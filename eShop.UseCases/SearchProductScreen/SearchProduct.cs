@@ -3,6 +3,7 @@ using eShop.UseCases.PluginInterfaces.DataStore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace eShop.UseCases.SearchProductScreen
 {
@@ -19,5 +20,6 @@ namespace eShop.UseCases.SearchProductScreen
         {
             return productRepository.GetProducts(filter);
         }
+        
     }
 }
