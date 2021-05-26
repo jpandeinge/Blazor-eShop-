@@ -9,15 +9,15 @@ namespace eShop.CoreBusiness.Features
 {
     public class ProductReportData 
     {
-        private static HttpClient _httpClient;
+        private readonly HttpClient _httpClient;
         public ProductReportData(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
         
-        public static async Task<byte[]> GetExcelReport(ProductReportRequest request)
+        public  async Task<byte[]> GetExcelReport(ProductReportRequest request)
         {
-            var response = await _httpClient.PostAsJsonAsync($"api/v1/productreport", request);
+            var response = await _httpClient.PostAsJsonAsync($"api/v1/product-report/export-to-excel/", request);
             var stream = await response.Content.ReadAsStreamAsync();
             await using var memoryStream = new MemoryStream();
             await stream.CopyToAsync(memoryStream);

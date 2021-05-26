@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Server.Controllers
 {
     [ApiController]
-    [Route("api/v1/productreport")]
+    [Route("api/v1/product-report")]
     public class ProductReportController : Controller
     {
         

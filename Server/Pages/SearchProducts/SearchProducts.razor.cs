@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DocumentFormat.OpenXml.Office2010.ExcelAc;
 using DocumentFormat.OpenXml.Wordprocessing;
+using eShop.CoreBusiness.Features;
 using eShop.CoreBusiness.Models;
 using eShop.DataStore.HardCoded;
 using Microsoft.AspNetCore.Components;
@@ -92,7 +93,7 @@ namespace Server.Pages.SearchProducts
             };
             
             var fileName = "Product Report";
-            var resultBytes = await eShop.CoreBusiness.Features.ProductReportData.GetExcelReport(request);
+            var resultBytes = await ProductReportData.GetExcelReport(request);
             
             await _jsRuntime.InvokeVoidAsync(
                 "Window.downloadFromByteArray",
